@@ -1,1 +1,2 @@
 require "general"
+require "plugins"
