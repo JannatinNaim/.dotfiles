@@ -29,7 +29,7 @@ plugins=(
   git # Git integration and aliases.
   git-auto-fetch # Auto fetch git remotes.
   gitignore # Gitignore template files.
-  last-working-dir # Switch to last working directory.
+  # last-working-dir # Switch to last working directory.
   fzf # FZF integration.
   colored-man-pages # Colorful man pages.
 
