@@ -11,3 +11,5 @@ require "plugins.config.gitsigns"
 
 require "plugins.config.autopairs"
 require "plugins.config.comment"
+
+require "plugins.config.cmp"
