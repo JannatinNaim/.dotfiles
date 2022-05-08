@@ -7,3 +7,4 @@ require "plugins.config.telescope"
 require "plugins.config.nvim-tree"
 
 require "plugins.config.indentline"
+require "plugins.config.gitsigns"
