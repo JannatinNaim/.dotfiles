@@ -33,5 +33,7 @@ plugins=(
 source "$ZSH/oh-my-zsh.sh"
 source "$HOME/.p10k.zsh"
 
+for aliasfile in ~/.dotfiles/zsh/aliases/*.zsh; do source "$aliasfile"; done
+
 source "$HOME/.dotfiles/zsh/config/zoxide.zsh"
 eval "$(zoxide init --cmd j --hook pwd zsh)"
