@@ -1,2 +1,0 @@
-require "general"
-require "plugins"
