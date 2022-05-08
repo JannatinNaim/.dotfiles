@@ -8,3 +8,5 @@ require "plugins.config.nvim-tree"
 
 require "plugins.config.indentline"
 require "plugins.config.gitsigns"
+
+require "plugins.config.autopairs"
