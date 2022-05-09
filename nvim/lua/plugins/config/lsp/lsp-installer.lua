@@ -8,7 +8,8 @@ local lspconfig = require("lspconfig")
 local servers = {
   "sumneko_lua",
   "jsonls",
-  "tsserver"
+  "tsserver",
+  "emmet_ls"
 }
 
 lsp_installer.setup {

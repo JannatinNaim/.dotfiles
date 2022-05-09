@@ -86,7 +86,8 @@ local function disable_lsp_formatting(client)
 	local no_format_servers = {
     "sumneko_lua",
     "jsonls",
-    "tsserver"
+    "tsserver",
+    "emmet_ls"
   }
 
 	for _, no_format_server in pairs(no_format_servers) do

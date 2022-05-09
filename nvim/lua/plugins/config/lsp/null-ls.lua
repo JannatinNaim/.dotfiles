@@ -31,15 +31,15 @@ null_ls.setup({
 				120,
 			},
 		}),
-		-- formatting.eslint.with({
-		-- 	prefer_local = true,
-		-- }),
-		-- diagnostics.eslint.with({
-		-- 	prefer_local = true,
-		-- }),
-		-- code_actions.eslint.with({
-		-- 	prefer_local = true,
-		-- }),
+		formatting.eslint.with({
+			prefer_local = true,
+		}),
+		diagnostics.eslint.with({
+			prefer_local = true,
+		}),
+		code_actions.eslint.with({
+			prefer_local = true,
+		}),
 
 		-- formatting.autopep8,
 		-- diagnostics.flake8,
