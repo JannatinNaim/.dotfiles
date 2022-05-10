@@ -21,12 +21,13 @@ zstyle ':omz:update' frequency 1
 source "$HOME/.dotfiles/zsh/config/auto-notify.zsh"
 
 plugins=(
+  tmux
   vi-mode
   ssh-agent
   gpg-agent
 
   F-Sy-H
-  auto-notify
+  # auto-notify
   zsh-autosuggestions
 )
 
