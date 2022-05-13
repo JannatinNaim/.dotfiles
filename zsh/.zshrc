@@ -27,7 +27,6 @@ plugins=(
   gpg-agent
 
   F-Sy-H
-  # auto-notify
   zsh-autosuggestions
 )
 
