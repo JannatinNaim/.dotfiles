@@ -3,3 +3,5 @@
 	email = contact.jannatinnaim@gmail.com
 [core]
 	editor = nvim
+[init]
+	defaultBranch = main

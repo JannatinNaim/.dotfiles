@@ -19,6 +19,7 @@ return packer.startup(function(use)
 	use("andweeb/presence.nvim") -- Discord presence.
 
 	use("navarasu/onedark.nvim") -- OneDark.
+  use("Mofiqul/vscode.nvim") -- VsCode Theme.
 	use("nvim-lualine/lualine.nvim") -- Lualine.
 	use("akinsho/bufferline.nvim") -- Bufferline.
 	use("kyazdani42/nvim-web-devicons") -- Dev Icons.
