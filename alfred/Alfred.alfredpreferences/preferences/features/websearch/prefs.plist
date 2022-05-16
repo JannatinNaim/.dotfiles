@@ -17,6 +17,19 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>6E8A28DB-3718-47DF-9481-413976DA4449</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>monkeytype</string>
+			<key>text</key>
+			<string>Open MonkeyType</string>
+			<key>url</key>
+			<string>https://monkeytype.com/</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>81CB9C7A-FD97-4279-8017-0C2F3F8FF042</key>
 		<dict>
 			<key>enabled</key>
