@@ -70,3 +70,5 @@ keymap("n", "<leader>fg", "<cmd>lua require('telescope.builtin').git_status()<CR
 
 keymap("n", "<leader>w", "<cmd>w<CR>", opts)
 keymap("n", "<leader>fd", "<cmd>Format<CR>", opts)
+
+keymap("n", "<leader>sd", "<cmd>Cheat<CR>", opts)

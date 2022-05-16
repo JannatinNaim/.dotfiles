@@ -53,7 +53,7 @@ null_ls.setup({
 		-- diagnostics.proselint,
 		-- hover.dictionary,
 
-		code_actions.gitsigns,
-		code_actions.refactoring,
+		-- code_actions.gitsigns,
+		-- code_actions.refactoring,
 	},
 })

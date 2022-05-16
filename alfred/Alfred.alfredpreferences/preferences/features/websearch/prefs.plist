@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>075D2246-58FB-4889-B9F8-5AC14D1E31AA</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>instagram</string>
+			<key>text</key>
+			<string>Open Instagram</string>
+			<key>url</key>
+			<string>https://instagram.com/</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>81CB9C7A-FD97-4279-8017-0C2F3F8FF042</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>facebook</string>
+			<key>text</key>
+			<string>Open Facebook</string>
+			<key>url</key>
+			<string>https://facebook.com/</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>C547055C-93EB-4EAC-BC02-BD8B48E1DEB2</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>github</string>
+			<key>text</key>
+			<string>Open GitHub</string>
+			<key>url</key>
+			<string>https://github.com/JannatinNaim/</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

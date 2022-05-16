@@ -84,11 +84,12 @@ end
 
 local function disable_lsp_formatting(client)
 	local no_format_servers = {
-    "sumneko_lua",
-    "jsonls",
-    "tsserver",
-    "emmet_ls"
-  }
+		"sumneko_lua",
+		"jsonls",
+		"tsserver",
+		"emmet_ls",
+		"cssls",
+	}
 
 	for _, no_format_server in pairs(no_format_servers) do
 		if client.name == no_format_server then
@@ -122,6 +123,7 @@ M.on_attach = function(client, bufnr)
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 local status_ok, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
 if not status_ok then

@@ -14,3 +14,5 @@ require "plugins.config.comment"
 
 require "plugins.config.cmp"
 require "plugins.config.lsp"
+
+require "plugins.config.nvim-cheat"

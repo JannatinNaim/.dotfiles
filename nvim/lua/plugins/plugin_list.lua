@@ -76,6 +76,9 @@ return packer.startup(function(use)
 
 	use("ThePrimeagen/refactoring.nvim") -- Refactoring.
 
+  use "RishabhRD/popfix"
+  use "RishabhRD/nvim-cheat.sh"
+
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
