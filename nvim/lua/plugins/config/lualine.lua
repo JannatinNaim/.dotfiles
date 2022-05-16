@@ -81,8 +81,7 @@ lualine.setup({
 	globalstatus = true,
 	options = {
 		icons_enabled = true,
-		-- theme = "auto",
-		theme = "onedark",
+		theme = "auto",
 		-- component_separators = { left = "", right = "" },
 		-- section_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" },
@@ -91,8 +90,8 @@ lualine.setup({
 		always_divide_middle = true,
 	},
 	sections = {
-		lualine_a = { branch, diagnostics },
-		lualine_b = { mode },
+		lualine_a = { mode },
+		lualine_b = { branch, diagnostics },
 		lualine_c = {
 			{
 				"filename",

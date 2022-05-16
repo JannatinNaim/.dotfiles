@@ -16,10 +16,12 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim") -- Packer.
 
 	use("wakatime/vim-wakatime") -- Wakatime.
-	use("andweeb/presence.nvim") -- Discord presence.
+	-- use("andweeb/presence.nvim") -- Discord presence.
 
-	use("navarasu/onedark.nvim") -- OneDark.
-  use("Mofiqul/vscode.nvim") -- VsCode Theme.
+	-- use("navarasu/onedark.nvim") -- OneDark.
+	use("olimorris/onedarkpro.nvim") -- OneDark Pro.
+	-- use("Mofiqul/vscode.nvim") -- VsCode Theme.
+	use("ChristianChiarulli/nvcode-color-schemes.vim") -- nvCode Colorschemes.
 	use("nvim-lualine/lualine.nvim") -- Lualine.
 	use("akinsho/bufferline.nvim") -- Bufferline.
 	use("kyazdani42/nvim-web-devicons") -- Dev Icons.
@@ -35,7 +37,7 @@ return packer.startup(function(use)
 	use("saadparwaiz1/cmp_luasnip") -- Nvim CMP LuaSnip.
 	use("hrsh7th/cmp-cmdline") -- Nvim CMP CMDline.
 	use("hrsh7th/cmp-path") -- Nvim CMP Path.
-  use("hrsh7th/cmp-buffer") -- Nvim CMP Buffer.
+	use("hrsh7th/cmp-buffer") -- Nvim CMP Buffer.
 	use("hrsh7th/cmp-emoji") -- Nvim CMP Emoji.
 	use("b0o/SchemaStore.nvim") -- JSON schemas.
 
@@ -77,8 +79,10 @@ return packer.startup(function(use)
 
 	use("ThePrimeagen/refactoring.nvim") -- Refactoring.
 
-  use "RishabhRD/popfix"
-  use "RishabhRD/nvim-cheat.sh"
+	use("RishabhRD/popfix")
+	use("RishabhRD/nvim-cheat.sh")
+
+  use("p00f/nvim-ts-rainbow") -- Rainbow Parentheses.
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
