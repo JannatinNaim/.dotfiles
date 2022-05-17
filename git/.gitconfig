@@ -1,7 +1,10 @@
 [user]
 	name = MD Jannatin Naim
 	email = contact.jannatinnaim@gmail.com
+	signingkey = 9FC5A175CE9D88DB
 [core]
 	editor = nvim
 [init]
 	defaultBranch = main
+[commit]
+	gpgsign = true

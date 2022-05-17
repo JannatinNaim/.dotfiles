@@ -13,21 +13,18 @@ export ZSH="$HOME/.local/share/omz/"
 export ZSH_CUSTOM="$ZSH/custom"
 
 export ZSH_THEME="powerlevel10k/powerlevel10k"
-# source "$HOME/.dotfiles/zsh/config/starship/starship.zsh"
 
 zstyle ':omz:update' mode auto
 zstyle ':omz:update' frequency 1
 
-source "$HOME/.dotfiles/zsh/config/auto-notify.zsh"
-
 plugins=(
-  tmux
-  vi-mode
-  ssh-agent
-  gpg-agent
+ tmux
+ vi-mode
+ ssh-agent
+ gpg-agent
 
-  F-Sy-H
-  zsh-autosuggestions
+ F-Sy-H
+ zsh-autosuggestions
 )
 
 source "$ZSH/oh-my-zsh.sh"
