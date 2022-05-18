@@ -22,29 +22,46 @@ onedarkpro.setup({
     variables = "bold",
   },
   colors = {
-    -- colors.fg = "#abb2bf"
     fg = "#a0a8b7",
-    -- colors.red = "#e06c75"
     red = "#e55561",
-    -- colors.orange = "#d19a66"
     orange = "#cc9057",
-    -- colors.yellow = "#e5c07b"
     yellow = "#e2b86b",
-    -- colors.green = "#98c379"
     green = "#8ebd6b",
-    -- colors.cyan = "#56b6c2"
     cyan = "#48b0bd",
-    -- colors.blue = "#61afef"
     blue = "#4fa6ed",
-    -- colors.purple = "#c678dd"
     purple = "#bf68d9",
-    -- colors.black = "#282c34"
+    -- purple = "#42d4f5",
     black = "#0e1013",
-    -- colors.gray = "#5c6370"
     gray = "#535965",
+
+    -- bg_statusline = "#282C34",
+    -- fg_gutter = "#323641",
+    -- fg_sidebar = "#8EBD6B"
+
+    -- default_purple = "#BF68D9",
+  },
+  hlgroups = {
+    CursorLineNr = { fg = "NONE" },
+    -- Statement = { fg = "${default_purple}" },
+    -- Conditional = { fg = "${default_purple}" },
+    -- Repeat = { fg = "${default_purple}" },
+    -- Keyword = { fg = "${default_purple}" },
+    -- Exception = { fg = "${default_purple}" },
+    -- Include = { fg = "${default_purple}" },
+    -- Define = { fg = "${default_purple}" },
+    -- Structure = { fg = "${default_purple}" },
+    -- Typedef = { fg = "${default_purple}" },
+  },
+  filetype_hlgroups = {
+    -- TSAttribute = { fg = "${default_purple" },
+    -- TSConstBuiltin = { fg = "${default_purple" },
+    -- TSInclude = { fg = "${default_purple" },
+    -- TSKeyword = { fg = "${default_purple" },
+    -- TSKeywordFunction = { fg = "${default_purple" },
+    -- TSKeywordOperator = { fg = "${default_purple" },
+    -- TSLabel = { fg = "${default_purple" },
+    -- TSRepeat = { fg = "${default_purple" },
   }
 })
 
 onedarkpro.load()
-
-vim.cmd "highlight CursorLineNr cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE"
