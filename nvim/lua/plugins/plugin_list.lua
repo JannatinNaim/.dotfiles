@@ -22,6 +22,7 @@ return packer.startup(function(use)
 	use("olimorris/onedarkpro.nvim") -- OneDark Pro.
 	-- use("Mofiqul/vscode.nvim") -- VsCode Theme.
 	-- use("ChristianChiarulli/nvcode-color-schemes.vim") -- nvCode Colorschemes.
+  use("projekt0n/github-nvim-theme") -- GitHub Theme.
 	use("nvim-lualine/lualine.nvim") -- Lualine.
 	use("akinsho/bufferline.nvim") -- Bufferline.
 	use("kyazdani42/nvim-web-devicons") -- Dev Icons.

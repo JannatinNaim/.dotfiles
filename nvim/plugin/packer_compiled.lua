@@ -144,6 +144,11 @@ _G.packer_plugins = {
     path = "/Users/jannatinnaim/.local/share/nvim/site/pack/packer/start/fuzzy.nvim",
     url = "https://github.com/tzachar/fuzzy.nvim"
   },
+  ["github-nvim-theme"] = {
+    loaded = true,
+    path = "/Users/jannatinnaim/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
+    url = "https://github.com/projekt0n/github-nvim-theme"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/Users/jannatinnaim/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",

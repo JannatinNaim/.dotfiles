@@ -1,5 +1,6 @@
-require("plugins.config.onedark")
-require("plugins.config.onedarkpro")
+-- require("plugins.config.onedark")
+-- require("plugins.config.onedarkpro")
+require("plugins.config.github-theme")
 require("plugins.config.treesitter")
 require("plugins.config.nvim-tree")
 require("plugins.config.lualine")
