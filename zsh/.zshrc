@@ -6,6 +6,7 @@ fi
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export MANPATH="/usr/local/man:$MANPATH"
 export LANG=en_US.UTF-8
+export PATH=$HOME/.dotfiles/zsh/scripts/:$PATH
 
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -42,11 +43,3 @@ alias ga="git add"
 alias gc="git commit -v"
 alias gp="git push"
 
-function hackerman {
-  tmux new-session "nvim" \; \
-    rename-session ${1:-"HACKERMAN"} \; \
-    rename-window "CODE" \; \
-    new-window -d -n "BUILD" \; \
-    new-window -d -n "GIT" \; \
-    new-window -d -n "MISC"
-}

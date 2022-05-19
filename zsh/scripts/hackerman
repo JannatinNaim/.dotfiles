@@ -1,0 +1,9 @@
+#!/bin/zsh
+tmux new-session \; \
+rename-session ${1:-"HACKERMAN"} \; \
+rename-window "CODE" \; \
+send-keys "nvim" \; \
+send-keys Enter \; \
+new-window -d -n "BUILD" \; \
+new-window -d -n "GIT" \; \
+new-window -d -n "MISC"
