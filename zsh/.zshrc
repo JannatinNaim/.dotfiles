@@ -34,10 +34,19 @@ fi
 
 eval "$(zoxide init --cmd j --hook pwd zsh)"
 
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source ~/.p10k.zsh
 
 source "${HOME}/.iterm2_shell_integration.zsh"
 
 alias ga="git add"
 alias gc="git commit -v"
 alias gp="git push"
+
+function hackerman {
+  tmux new-session "nvim" \; \
+    rename-session ${1:-"HACKERMAN"} \; \
+    rename-window "CODE" \; \
+    new-window -d -n "BUILD" \; \
+    new-window -d -n "GIT" \; \
+    new-window -d -n "MISC"
+}
