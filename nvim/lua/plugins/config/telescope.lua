@@ -86,5 +86,8 @@ telescope.setup({
 		},
 	},
 
-	file_ignore_patterns = { "node_modules" },
+	file_ignore_patterns = {
+    "node_modules",
+    "build",
+  },
 })
