@@ -43,3 +43,6 @@ alias ga="git add"
 alias gc="git commit -v"
 alias gp="git push"
 
+alias shellconfig="nvim ~/.zshrc"
+alias nvimconfig="nvim ~/.config/nvim"
+alias tmuxconfig="nvim ~/.tmux.conf"
