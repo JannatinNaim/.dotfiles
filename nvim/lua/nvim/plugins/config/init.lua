@@ -1,0 +1,5 @@
+require("nvim.plugins.config.onedarkpro")
+require("nvim.plugins.config.lualine")
+require("nvim.plugins.config.treesitter")
+require("nvim.plugins.config.cmp")
+require("nvim.plugins.config.lsp")
