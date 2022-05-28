@@ -62,7 +62,9 @@ setopt hist_find_no_dups
 alias ga="git add"
 alias gc="git commit -v"
 alias gp="git push"
+alias gacp="ga . && gc && gp"
 
+alias dotfiles="nvim ~/.dotfiles"
 alias shellconfig="nvim ~/.zshrc"
 alias nvimconfig="nvim ~/.config/nvim"
 alias tmuxconfig="nvim ~/.tmux.conf"
