@@ -4,20 +4,11 @@ fi
 source ~/.p10k.zsh
 source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 
-export PATH=$HOME/.bin/:$PATH
-
-if type brew &>/dev/null
-then
-  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
-  autoload -Uz compinit
-  compinit
-fi
-HB_CNF_HANDLER="$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
-if [ -f "$HB_CNF_HANDLER" ]; then
-  source "$HB_CNF_HANDLER";
-fi
+PATH=$HOME/.bin/:$PATH
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 
 . $(brew --prefix asdf)/libexec/asdf.sh
+
 eval "$(zoxide init zsh --cmd j --hook pwd)"
 
 ZPLUGINDIR=${ZPLUGINDIR:-${ZDOTDIR:-$HOME/.config/zsh}/plugins}
@@ -40,6 +31,7 @@ repos=(
 plugin-load $repos
 
 ZVM_CURSOR_STYLE_ENABLED=false
+GENCOMPL_FPATH=$HOME/.zsh/complete
 
 alias l="ls -al --color=auto"
 
@@ -74,3 +66,13 @@ alias gp="git push"
 alias shellconfig="nvim ~/.zshrc"
 alias nvimconfig="nvim ~/.config/nvim"
 alias tmuxconfig="nvim ~/.tmux.conf"
+
+alias reload="exec $SHELL"
+
+HB_CNF_HANDLER="$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
+if [ -f "$HB_CNF_HANDLER" ]; then
+  source "$HB_CNF_HANDLER";
+fi
+
+autoload -Uz compinit
+compinit
