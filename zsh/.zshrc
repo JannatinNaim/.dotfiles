@@ -66,3 +66,11 @@ setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
+
+alias ga="git add"
+alias gc="git commit -v"
+alias gp="git push"
+
+alias shellconfig="nvim ~/.zshrc"
+alias nvimconfig="nvim ~/.config/nvim"
+alias tmuxconfig="nvim ~/.tmux.conf"
