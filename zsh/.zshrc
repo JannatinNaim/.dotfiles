@@ -73,6 +73,8 @@ alias tmuxconfig="nvim ~/.tmux.conf"
 
 alias reload="exec $SHELL"
 
+alias brewupdate="brew update && brew outdated && brew upgrade && brew cleanup"
+
 HB_CNF_HANDLER="$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
 if [ -f "$HB_CNF_HANDLER" ]; then
   source "$HB_CNF_HANDLER";
@@ -89,6 +91,7 @@ function hackerman {
   tmux new-session "nvim" \; \
     rename-session ${1:-"HACKERMAN"} \; \
     rename-window "CODE" \; \
+    setw remain-on-exit on \; \
     new-window -d -n "BUILD" \; \
     new-window -d -n "GIT" \; \
     new-window -d -n "MISC"

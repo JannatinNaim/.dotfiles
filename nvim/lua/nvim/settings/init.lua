@@ -12,8 +12,10 @@ vim.opt.syntax = "on"
 vim.opt.termguicolors = true
 vim.opt.wrap = false
 vim.opt.fixendofline = true
+vim.opt.conceallevel = 0
 
-vim.opt.completeopt = { "menu", "menuone", "noinsert", "noselect" }
+-- vim.opt.completeopt = { "menu", "menuone", "noinsert", "noselect" }
+vim.opt.completeopt = { "menuone", "noselect" }
 
 vim.opt.gdefault = true
 vim.opt.iskeyword:append("-")
@@ -41,10 +43,11 @@ vim.opt.splitright = true
 
 vim.opt.swapfile = false
 vim.opt.undofile = true
+vim.opt.backup = false
 vim.opt.writebackup = false
 
-vim.opt.updatetime = 100
-vim.opt.timeout = false
+vim.opt.updatetime = 300
+vim.opt.timeoutlen = 1000
 vim.g.netrw_banner = 0
 vim.opt.browsedir = "buffer"
 

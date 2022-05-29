@@ -4,6 +4,9 @@ vim.g.maplocalleader = " "
 
 vim.api.nvim_set_keymap("v", "<leader>y", '"+yi<ESC>', { noremap = true, silent = true })
 
+vim.api.nvim_set_keymap("", "<S-j>", "j", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("", "<S-k>", "k", { noremap = true, silent = true })
+
 vim.api.nvim_set_keymap("n", "<C-h>", "<C-w>h", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-j>", "<C-w>j", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-k>", "<C-w>k", { noremap = true, silent = true })
