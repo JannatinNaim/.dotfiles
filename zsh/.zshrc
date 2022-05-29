@@ -5,10 +5,10 @@ source ~/.p10k.zsh
 source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 PATH=$HOME/.bin/:$PATH
-FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+KEYTIMEOUT=10
+EDITOR="nvim"
 
 . $(brew --prefix asdf)/libexec/asdf.sh
-
 eval "$(zoxide init zsh --cmd j --hook pwd)"
 
 ZPLUGINDIR=${ZPLUGINDIR:-${ZDOTDIR:-$HOME/.config/zsh}/plugins}
@@ -59,6 +59,8 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
+alias g="git"
+alias gs="git status"
 alias ga="git add"
 alias gc="git commit -v"
 alias gp="git push"
@@ -76,5 +78,18 @@ if [ -f "$HB_CNF_HANDLER" ]; then
   source "$HB_CNF_HANDLER";
 fi
 
-autoload -Uz compinit
-compinit
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+  autoload -Uz compinit
+  compinit
+fi
+
+function hackerman {
+  tmux new-session "nvim" \; \
+    rename-session ${1:-"HACKERMAN"} \; \
+    rename-window "CODE" \; \
+    new-window -d -n "BUILD" \; \
+    new-window -d -n "GIT" \; \
+    new-window -d -n "MISC"
+}

@@ -92,7 +92,12 @@ telescope.setup({
 	},
 })
 
-vim.api.nvim_set_keymap("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>ff",
+	"<cmd>Telescope find_files hidden=true<CR>",
+	{ noremap = true, silent = true }
+)
 vim.api.nvim_set_keymap("n", "<leader>fs", "<cmd>Telescope grep_string<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>flg", "<cmd>Telescope live_grep<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>fb", "<cmd>Telescope buffers<CR>", { noremap = true, silent = true })

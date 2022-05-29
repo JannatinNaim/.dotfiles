@@ -95,8 +95,8 @@ cmp.setup({
 		},
 		{ name = "omni" },
 		{ name = "nvim_lsp_signature_help" },
-		-- { name = "path", options = { trailing_slas = true } },
-		{ name = "fuzzy_path" },
+		{ name = "path", options = { trailing_slas = true } },
+		-- { name = "fuzzy_path" },
 		{ name = "tmux" },
 		{ name = "zsh" },
 		{ name = "copilot" },
@@ -112,7 +112,7 @@ cmp.setup({
 		documentation = cmp.config.window.bordered(),
 	},
 	experimental = {
-		ghost_text = true,
+		ghost_text = false,
 		native_menu = false,
 	},
 })
@@ -120,8 +120,8 @@ cmp.setup({
 cmp.setup.cmdline(":", {
 	sources = {
 		{ name = "cmdline" },
-		-- { name = "path" },
-		{ name = "fuzzy_path" },
+		{ name = "path" },
+		-- { name = "fuzzy_path" },
 	},
 })
 
