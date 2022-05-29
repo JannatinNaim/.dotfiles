@@ -89,10 +89,9 @@ then
 fi
 
 function hackerman {
-  tmux new-session "nvim" \; \
-    rename-session ${1:-"HACKERMAN"} \; \
+  tmux new-session \; \
+    rename-session ${1:-"${PWD##*/}"} \; \
     rename-window "CODE" \; \
-    setw remain-on-exit on \; \
     new-window -d -n "BUILD" \; \
     new-window -d -n "GIT" \; \
     new-window -d -n "MISC"
