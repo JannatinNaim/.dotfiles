@@ -9,16 +9,12 @@ onedarkpro.setup({
 		all = true,
 	},
 	styles = {
-		comments = "italic",
 		keywords = "bold",
-		functions = "bold,italic",
-		variables = "bold",
+		functions = "bold",
 	},
 	options = {
 		bold = true,
-		italic = true,
 		underline = true,
-		undercurl = true,
 		cursorline = true,
 		transparency = true,
 		terminal_colors = true,

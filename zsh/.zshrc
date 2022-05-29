@@ -33,6 +33,7 @@ plugin-load $repos
 ZVM_CURSOR_STYLE_ENABLED=false
 GENCOMPL_FPATH=$HOME/.zsh/complete
 
+alias ls="exa"
 alias l="ls -al --color=auto"
 
 zstyle ':completion:*' verbose yes
