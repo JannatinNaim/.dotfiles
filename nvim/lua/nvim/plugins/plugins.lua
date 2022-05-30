@@ -71,6 +71,7 @@ return packer.startup(function(use)
 	use({ "nvim-telescope/telescope.nvim", requires = { { "nvim-lua/plenary.nvim" } } })
 	use("lukas-reineke/indent-blankline.nvim")
 	use("wakatime/vim-wakatime")
+	use("andweeb/presence.nvim")
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()

@@ -87,8 +87,8 @@ telescope.setup({
 	},
 
 	file_ignore_patterns = {
-		"node_modules",
-		"build",
+		"node_modules/*",
+		"build/*",
 	},
 })
 

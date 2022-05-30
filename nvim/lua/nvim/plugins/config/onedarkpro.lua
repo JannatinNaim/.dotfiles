@@ -4,7 +4,8 @@ if not onedarkpro_status_ok then
 end
 
 onedarkpro.setup({
-	dark_theme = "onedark_vivid",
+	-- dark_theme = "onedark_vivid",
+	dark_theme = "onelight",
 	plugins = {
 		all = true,
 	},

@@ -76,7 +76,9 @@ lualine.setup({
 	globalstatus = true,
 	options = {
 		icons_enabled = true,
-		theme = "onedark",
+		-- theme = "auto",
+		-- theme = "onedark",
+		theme = "onelight",
 		section_separators = { left = "", right = "" },
 		component_separators = { left = "", right = "" },
 		disabled_filetypes = { "alpha", "dashboard", "NvimTree", "Outline" },

@@ -9,6 +9,8 @@ KEYTIMEOUT=10
 EDITOR="nvim"
 
 . $(brew --prefix asdf)/libexec/asdf.sh
+. ~/.asdf/plugins/java/set-java-home.zsh
+
 eval "$(zoxide init zsh --cmd j --hook pwd)"
 
 ZPLUGINDIR=${ZPLUGINDIR:-${ZDOTDIR:-$HOME/.config/zsh}/plugins}
