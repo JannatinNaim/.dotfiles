@@ -1,22 +1,22 @@
 #!/bin/bash
 
-onedark_black="#f0f0f0"
-onedark_blue="#4078f2"
-onedark_yellow="#e5c07b"
-onedark_red="#e06c75"
-onedark_white="#696c77"
-onedark_green="#50a14f"
-onedark_visual_grey="#d0d0d0"
-onedark_comment_grey="#696c77"
-
-# onedark_black="#282c34"
-# onedark_blue="#61afef"
+# onedark_black="#f0f0f0"
+# onedark_blue="#4078f2"
 # onedark_yellow="#e5c07b"
 # onedark_red="#e06c75"
-# onedark_white="#aab2bf"
-# onedark_green="#98c379"
-# onedark_visual_grey="#3e4452"
-# onedark_comment_grey="#5c6370"
+# onedark_white="#696c77"
+# onedark_green="#50a14f"
+# onedark_visual_grey="#d0d0d0"
+# onedark_comment_grey="#696c77"
+
+onedark_black="#282c34"
+onedark_blue="#61afef"
+onedark_yellow="#e5c07b"
+onedark_red="#e06c75"
+onedark_white="#aab2bf"
+onedark_green="#98c379"
+onedark_visual_grey="#3e4452"
+onedark_comment_grey="#5c6370"
 
 get() {
    local option=$1
