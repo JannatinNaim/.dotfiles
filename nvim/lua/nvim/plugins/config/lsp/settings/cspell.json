@@ -1,0 +1,27 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "dictionaries": [
+    "en_US",
+    "companies",
+    "softwareTerms",
+    "misc",
+    "typescript",
+    "node",
+    "php",
+    "go",
+    "python",
+    "powershell",
+    "html",
+    "css",
+    "cpp",
+    "csharp",
+    "latex",
+    "bash",
+    "fonts",
+    "filetypes",
+    "npm"
+  ],
+  "dictionaryDefinitions": [],
+  "ignorePaths": ["node_modules", "build"]
+}

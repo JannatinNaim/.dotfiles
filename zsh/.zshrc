@@ -77,6 +77,8 @@ alias reload="exec $SHELL"
 
 alias brewupdate="brew update && brew outdated && brew upgrade && brew cleanup"
 
+eval $(thefuck --alias)
+
 HB_CNF_HANDLER="$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
 if [ -f "$HB_CNF_HANDLER" ]; then
   source "$HB_CNF_HANDLER";

@@ -104,7 +104,7 @@ for _, server in pairs(servers) do
 		capabilities = capabilities,
 	}
 
-	local has_custom_server_opts, custom_server_opts = pcall(require, "plugins.config.lsp.settings." .. server)
+	local has_custom_server_opts, custom_server_opts = pcall(require, "nvim.plugins.config.lsp.settings." .. server)
 	if has_custom_server_opts then
 		server_opts = vim.tbl_deep_extend("force", custom_server_opts, server_opts)
 	end

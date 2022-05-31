@@ -30,7 +30,7 @@ null_ls.setup({
 	on_attach = on_attach,
 	sources = {
 		diagnostics.cspell.with({
-			extra_args = { "-c", vim.fn.expand("~/.config/nvim/lua/plugins/settings/lsp/settings/cspell.json") },
+			extra_args = { "-c", "~/.config/nvim/lua/pluginsconfig/lsp/settings/cspell.json" },
 			disabled_filetypes = { "NvimTree" },
 		}),
 
@@ -38,7 +38,7 @@ null_ls.setup({
 		formatting.trim_whitespace,
 
 		formatting.stylua,
-		diagnostics.luacheck,
+		-- diagnostics.luacheck,
 
 		formatting.prettier.with({
 			prefer_local = true,
