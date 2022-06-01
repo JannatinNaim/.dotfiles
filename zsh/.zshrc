@@ -66,7 +66,11 @@ alias gs="git status"
 alias ga="git add"
 alias gc="git commit -v"
 alias gp="git push"
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gac="ga . && gc"
 alias gacp="ga . && gc && gp"
+
+alias icode="code-insiders"
 
 alias dotfiles="nvim ~/.dotfiles"
 alias shellconfig="nvim ~/.zshrc"
@@ -98,4 +102,8 @@ function hackerman {
     new-window -d -n "BUILD" \; \
     new-window -d -n "GIT" \; \
     new-window -d -n "MISC"
+}
+
+function ogclone {
+  git clone git@github.com:JannatinNaim/${1}
 }
