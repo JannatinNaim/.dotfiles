@@ -18,6 +18,9 @@ onedarkpro.setup({
 		terminal_colors = true,
 	},
 	colors = {
+
+		-- DARK START
+
 		bg = "#282c34",
 		fg = "#abb2bf",
 		red = "#e05561",
@@ -32,6 +35,10 @@ onedarkpro.setup({
 		gray = "#4f5666",
 		highlight = "#abb2bf30",
 
+		-- DARK END
+
+		-- LIGHT START
+
 		-- fg = "#a0a8b7",
 		-- red = "#e55561",
 		-- orange = "#cc9057",
@@ -42,6 +49,8 @@ onedarkpro.setup({
 		-- purple = "#bf68d9",
 		-- black = "#0e1013",
 		-- gray = "#535965",
+
+		-- LIGHT END
 	},
 	hlgroups = {
 		CursorLineNr = { fg = "NONE", bg = "NONE" },
