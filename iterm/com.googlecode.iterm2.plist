@@ -72660,6 +72660,10 @@
 	<true/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>NeverWarnAboutShortLivedSessions_88AE7A52-91E9-456C-9E99-09F0C66BBE31</key>
+	<true/>
+	<key>NeverWarnAboutShortLivedSessions_88AE7A52-91E9-456C-9E99-09F0C66BBE31_selection</key>
+	<integer>0</integer>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
