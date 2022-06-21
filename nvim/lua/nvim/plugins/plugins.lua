@@ -73,6 +73,7 @@ return packer.startup(function(use)
 	use("wakatime/vim-wakatime")
 	use("andweeb/presence.nvim")
 	use("b0o/SchemaStore.nvim")
+	use("ful1e5/onedark.nvim")
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()

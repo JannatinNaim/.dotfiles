@@ -34,6 +34,9 @@ plugin-load $repos
 ZVM_CURSOR_STYLE_ENABLED=false
 GENCOMPL_FPATH=$HOME/.zsh/complete
 
+alias c="clear"
+alias e="exit"
+
 alias ls="exa"
 alias l="ls -al --color=auto"
 
@@ -66,9 +69,11 @@ alias gs="git status"
 alias ga="git add"
 alias gc="git commit -v"
 alias gp="git push"
+alias gpl="git pull"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gac="ga . && gc"
 alias gacp="ga . && gc && gp"
+alias gb="gh browse"
 
 alias icode="code-insiders"
 

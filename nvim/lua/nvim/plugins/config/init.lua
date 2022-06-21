@@ -1,4 +1,5 @@
 require("nvim.plugins.config.onedarkpro")
+-- require("nvim.plugins.config.onedark")
 require("nvim.plugins.config.treesitter")
 require("nvim.plugins.config.lualine")
 require("nvim.plugins.config.bufferline")

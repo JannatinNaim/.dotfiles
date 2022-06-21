@@ -60,7 +60,7 @@ nvim_tree.setup({
 			symlink_arrow = " >> ",
 			show = {
 				git = true,
-				folder = false,
+				folder = true,
 				file = true,
 				folder_arrow = true,
 			},
