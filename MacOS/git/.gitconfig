@@ -1,0 +1,10 @@
+[user]
+name = Jannatin Naim
+email = contact.jannatinnaim@gmail.com
+signingkey = B9906C678C03AC0E
+[commit]
+gpgsign = true
+[core]
+editor = nvim
+[init]
+defaultBranch = main
