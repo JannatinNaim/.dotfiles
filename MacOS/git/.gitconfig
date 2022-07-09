@@ -1,10 +1,15 @@
 [user]
 name = Jannatin Naim
 email = contact.jannatinnaim@gmail.com
-signingkey = B9906C678C03AC0E
+	signingKey = 9BC6EF22198E3666
 [commit]
 gpgsign = true
 [core]
 editor = nvim
 [init]
 defaultBranch = main
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
