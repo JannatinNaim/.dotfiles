@@ -20,9 +20,6 @@ export EDITOR="nvim"
 # Initialize zoxide.
 eval "$(zoxide init zsh --cmd j --hook pwd)"
 
-# Initialize thefuck.
-eval $(thefuck --alias)
-
 # Initialize command-not-found suggestion feature.
 HB_CNF_HANDLER="$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
 if [ -f "$HB_CNF_HANDLER" ]; then
@@ -46,7 +43,8 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 # Bootstrap zsh_unplugged. (plugin manager)
-ZPLUGINDIR=${ZPLUGINDIR:-${ZDOTDIR:-$HOME/.config/zsh}/plugins}
+# ZPLUGINDIR=${ZPLUGINDIR:-${ZDOTDIR:-$HOME/.config/zsh}/plugins}
+ZPLUGINDIR=$HOME/.config/zsh/plugins
 if [[ ! -d $ZPLUGINDIR/zsh_unplugged ]]; then
   git clone --quiet https://github.com/mattmc3/zsh_unplugged $ZPLUGINDIR/zsh_unplugged
 fi
@@ -84,6 +82,7 @@ zstyle ':completion:*:*:*:*:descriptions' format '%F{green}-- %d --%f'
 zstyle ':completion:*:*:*:*:corrections' format '%F{yellow}!- %d (errors: %e) -!%f'
 zstyle ':completion:*:messages' format ' %F{purple} -- %d --%f'
 zstyle ':completion:*:warnings' format ' %F{red}-- no matches found --%f'
+setopt globdots
 
 # ZSH history config.
 HISTSIZE=5000
@@ -107,21 +106,23 @@ then
 fi
 
 # General aliases.
+alias cd="j"
 alias c="clear"
 alias e="exit"
 
 # Navigation aliases.
 alias ls="exa"
-alias l="ls -al --color=auto"
+alias l="ls -al --color=auto -F --icons --group-directories-first -h"
 
 # Git aliases.
 alias g="git"
-alias gs="git status"
-alias ga="git add"
-alias gc="git commit -v"
-alias gp="git push"
-alias gpl="git pull"
-alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gs="g status"
+alias ga="g add"
+alias gc="g commit -v"
+alias gcl="g clone"
+alias gp="g push"
+alias gpl="g pull"
+alias gl="g log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gac="ga . && gc"
 alias gacp="ga . && gc && gp"
 alias gb="gh browse"
@@ -153,5 +154,9 @@ function hackerman {
 
 # Alias for cloning own repositories.
 function ogclone {
-  git clone git@github.com:JannatinNaim/${1}
+  gcl git@github.com:JannatinNaim/${1}
+}
+# Alias for cloning git repositories.
+function gclone {
+  gcl git@github.com:${1}
 }
