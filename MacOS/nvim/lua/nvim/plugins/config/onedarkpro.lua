@@ -9,15 +9,14 @@ onedarkpro.setup({
 		all = true,
 	},
 	styles = {
-		comments = "italic",
 		keywords = "bold",
-		functions = "bold,italic",
+		functions = "bold",
 		variables = "bold",
 	},
 	options = {
 		bold = true,
-		italic = true,
-		underline = true,
+		italic = false,
+		underline = false,
 		undercurl = true,
 		cursorline = true,
 		transparency = true,
