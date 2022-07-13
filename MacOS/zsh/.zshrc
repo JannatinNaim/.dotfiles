@@ -53,7 +53,7 @@ source $ZPLUGINDIR/zsh_unplugged/zsh_unplugged.plugin.zsh
 # Plugins.
 repos=(
   jeffreytse/zsh-vi-mode
-  MichaelAquilina/zsh-you-should-use
+  # MichaelAquilina/zsh-you-should-use
   zsh-users/zsh-autosuggestions
   mattmc3/zsh-safe-rm
   RobSis/zsh-completion-generator
