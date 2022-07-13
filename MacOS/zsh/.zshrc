@@ -109,6 +109,8 @@ fi
 alias cd="j"
 alias c="clear"
 alias e="exit"
+alias n="neofetch"
+alias p="pipes.sh"
 
 # Navigation aliases.
 alias ls="exa"
