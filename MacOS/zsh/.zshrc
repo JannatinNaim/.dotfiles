@@ -111,6 +111,7 @@ alias c="clear"
 alias e="exit"
 alias n="neofetch"
 alias p="pipes.sh"
+alias v="nvim"
 
 # Navigation aliases.
 alias ls="exa"

@@ -72894,13 +72894,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.10000000000000001</real>
+				<real>0.20392157137393951</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.10000000000000001</real>
+				<real>0.17254902422428131</real>
 				<key>Red Component</key>
-				<real>0.10000000000000001</real>
+				<real>0.15686275064945221</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -73335,6 +73335,8 @@
 			<true/>
 			<key>Normal Font</key>
 			<string>JetBrainsMonoNerdFontComplete-Medium 17</string>
+			<key>Only The Default BG Color Uses Transparency</key>
+			<false/>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -74509,7 +74511,7 @@
 				<real>0.67058825492858887</real>
 			</dict>
 			<key>Guid</key>
-			<string>D8E0C16F-4096-43EE-819D-AE70027D2286</string>
+			<string>C27486BB-7955-4DB5-9F08-F144F1B884FF</string>
 			<key>Horizontal Spacing</key>
 			<real>1</real>
 			<key>Idle Code</key>
@@ -74831,6 +74833,8 @@
 			<true/>
 			<key>Normal Font</key>
 			<string>JetBrainsMonoNerdFontComplete-Medium 17</string>
+			<key>Only The Default BG Color Uses Transparency</key>
+			<false/>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>

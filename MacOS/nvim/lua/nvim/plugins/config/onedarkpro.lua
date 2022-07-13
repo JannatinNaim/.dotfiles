@@ -19,7 +19,7 @@ onedarkpro.setup({
 		underline = false,
 		undercurl = true,
 		cursorline = true,
-		transparency = true,
+		-- transparency = true,
 		terminal_colors = true,
 	},
 	colors = {
