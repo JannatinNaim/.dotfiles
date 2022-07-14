@@ -134,9 +134,9 @@ alias gb="gh browse"
 alias icode="code-insiders"
 
 # Quick config edit aliases.
-alias dotfiles="nvim ~/.dotfiles"
+alias dotfiles="nvim ~/Documents/Code/.dotfiles/"
 alias shellconfig="nvim ~/.zshrc"
-alias nvimconfig="nvim ~/.config/nvim"
+alias nvimconfig="nvim ~/.config/nvim/"
 alias tmuxconfig="nvim ~/.tmux.conf"
 
 # Shell reload.
