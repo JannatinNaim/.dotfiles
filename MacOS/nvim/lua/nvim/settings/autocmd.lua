@@ -8,13 +8,13 @@ autocmd([[
   augroup END
 ]])
 
-autocmd([[
-  augroup RELATIVENUMBER_TOGGLE
-    autocmd!
-    autocmd InsertEnter * :set norelativenumber
-    autocmd InsertLeave * :set relativenumber
-  augroup end
-]])
+-- autocmd([[
+--   augroup RELATIVENUMBER_TOGGLE
+--     autocmd!
+--     autocmd InsertEnter * :set norelativenumber
+--     autocmd InsertLeave * :set relativenumber
+--   augroup end
+-- ]])
 
 autocmd([[
   augroup NO_COMMENT_CONTINUATION
