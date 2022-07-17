@@ -129,6 +129,7 @@ alias gl="g log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s 
 alias gac="ga . && gc"
 alias gacp="ga . && gc && gp"
 alias gb="gh browse"
+alias ghpr="gh pr create --fill"
 
 # VSCode alias.
 alias icode="code-insiders"
