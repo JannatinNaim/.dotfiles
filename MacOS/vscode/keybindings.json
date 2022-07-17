@@ -6,5 +6,9 @@
   {
     "key": "cmd+k shift+cmd+s",
     "command": "workbench.action.toggleStatusbarVisibility"
+  },
+  {
+    "key": "cmd+k cmd+r",
+    "command": "workbench.action.reloadWindow"
   }
 ]
