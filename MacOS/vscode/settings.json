@@ -1,12 +1,12 @@
 {
   // Quality of life improvements.
-  "editor.foldingImportsByDefault": true,
+  // "editor.foldingImportsByDefault": true,
   "editor.linkedEditing": true,
   "editor.parameterHints.cycle": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
-  "files.autoSave": "onFocusChange",
+  // "files.autoSave": "onFocusChange",
   "terminal.integrated.macOptionIsMeta": true,
   "telemetry.telemetryLevel": "off",
   "git.autofetch": true,
@@ -31,6 +31,7 @@
   "editor.fontSize": 16,
   "debug.console.fontSize": 16,
   "terminal.integrated.fontSize": 16,
+  "editor.wordWrap": "off",
   "indentRainbow.colors": [
     "rgba(70, 70, 70, 0.15)",
     "rgba(90, 90, 90, 0.15)",
@@ -52,7 +53,13 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "cSpell.language": "en,lorem",
@@ -82,10 +89,12 @@
   "workbench.tips.enabled": false,
   "workbench.editor.untitled.hint": "hidden",
   "window.dialogStyle": "custom",
+  "files.simpleDialog.enable": true,
   // Productivity boost.
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.settings.editor": "json",
   "search.showLineNumbers": true,
   "search.smartCase": true,
-  "window.zoomLevel": 1
+  // Extension config.
+  "code-runner.runInTerminal": true
 }
