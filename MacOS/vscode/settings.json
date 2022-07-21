@@ -1,12 +1,10 @@
 {
   // Quality of life improvements.
-  // "editor.foldingImportsByDefault": true,
   "editor.linkedEditing": true,
   "editor.parameterHints.cycle": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
-  // "files.autoSave": "onFocusChange",
   "terminal.integrated.macOptionIsMeta": true,
   "telemetry.telemetryLevel": "off",
   "git.autofetch": true,
@@ -32,15 +30,6 @@
   "debug.console.fontSize": 16,
   "terminal.integrated.fontSize": 16,
   "editor.wordWrap": "off",
-  "indentRainbow.colors": [
-    "rgba(70, 70, 70, 0.15)",
-    "rgba(90, 90, 90, 0.15)",
-    "rgba(125, 125, 125, 0.15)",
-    "rgba(155, 155, 155, 0.15)",
-    "rgba(125, 125, 125, 0.15)",
-    "rgba(90, 90, 90, 0.15)",
-    "rgba(70, 70, 70, 0.15)"
-  ],
   // Code styles.
   "editor.tabSize": 2,
   "files.insertFinalNewline": true,
@@ -75,39 +64,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "cSpell.language": "en,lorem",
-  "cSpell.enableFiletypes": [
-    "csv",
-    "diff",
-    "dockerfile",
-    "dotenv",
-    "drawio",
-    "editorconfig",
-    "gitignore",
-    "jsx-tags",
-    "lua",
-    "mongodb",
-    "properties",
-    "shellscript",
-    "sql",
-    "svelte",
-    "tailwindcss",
-    "vimrc",
-    "vue-html"
-  ],
-  "python.analysis.inlayHints.functionReturnTypes": true,
-  "python.analysis.inlayHints.variableTypes": true,
-  // "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
-  // "javascript.inlayHints.parameterNames.enabled": "all",
-  // "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
-  // "javascript.inlayHints.variableTypes.enabled": true,
-  // "javascript.inlayHints.parameterTypes.enabled": true,
-  // "javascript.inlayHints.enumMemberValues.enabled": true,
-  // "typescript.inlayHints.enumMemberValues.enabled": true,
-  // "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
-  // "typescript.inlayHints.parameterNames.enabled": "all",
-  // "typescript.inlayHints.parameterTypes.enabled": true,
-  // "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
-  // "typescript.inlayHints.variableTypes.enabled": true,
   // Minimalism.
   "workbench.commandPalette.history": 0,
   "workbench.layoutControl.enabled": false,
@@ -122,5 +78,7 @@
   "search.showLineNumbers": true,
   "search.smartCase": true,
   // Extension config.
-  "code-runner.runInTerminal": true
+  "code-runner.runInTerminal": true,
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.messageBackgroundMode": "none"
 }
