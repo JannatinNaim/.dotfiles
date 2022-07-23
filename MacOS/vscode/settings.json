@@ -14,7 +14,7 @@
   "editor.cursorSurroundingLines": 8,
   // Appearance.
   "workbench.sideBar.location": "right",
-  "workbench.colorTheme": "One Dark Pro Mix",
+  "workbench.colorTheme": "One Dark Pro",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "fluent-icons",
   "editor.guides.bracketPairs": true,
@@ -83,5 +83,17 @@
   // Extension config.
   "code-runner.runInTerminal": true,
   "errorLens.gutterIconsEnabled": true,
-  "errorLens.messageBackgroundMode": "none"
+  "errorLens.messageBackgroundMode": "none",
+  "errorLens.gutterIconSet": "defaultOutline",
+  "errorLens.followCursor": "allLines",
+  "errorLens.fontWeight": "bold",
+  "errorLens.margin": "8ch",
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": true
+  },
+  "oneDarkPro.editorTheme": "Shadow",
+  "oneDarkPro.markdownStyle": false,
+  "oneDarkPro.bold": true,
+  "oneDarkPro.italic": false,
+  "oneDarkPro.vivid": true
 }
