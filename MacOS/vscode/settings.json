@@ -99,5 +99,7 @@
   "oneDarkPro.markdownStyle": false,
   "oneDarkPro.bold": true,
   "oneDarkPro.italic": false,
-  "oneDarkPro.vivid": true
+  "oneDarkPro.vivid": true,
+  "Lua.telemetry.enable": false,
+  "Lua.diagnostics.globals": ["vim"]
 }
