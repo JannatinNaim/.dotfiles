@@ -66,6 +66,9 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[python]": {
+    "editor.tabSize": 4
+  },
   "cSpell.language": "en,lorem",
   // Minimalism.
   "workbench.commandPalette.history": 0,
@@ -88,6 +91,7 @@
   "errorLens.followCursor": "allLines",
   "errorLens.fontWeight": "bold",
   "errorLens.margin": "8ch",
+  "errorLens.gutterIconSize": "150%",
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": true
   },

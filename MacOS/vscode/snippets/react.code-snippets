@@ -4,7 +4,7 @@
     "body": [
       "const ${1:${TM_FILENAME_BASE}} = () => {",
       "  return (",
-      "    <div>${1:first}</div>",
+      "    <div>${1}</div>",
       "  )",
       "}"
     ],
@@ -16,7 +16,7 @@
     "body": [
       "const ${1:${TM_FILENAME_BASE}} = () => {",
       "  return (",
-      "    <div>${1:first}</div>",
+      "    <div>${1}</div>",
       "  )",
       "}",
       "",
