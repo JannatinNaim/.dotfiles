@@ -14,7 +14,7 @@
   "editor.cursorSurroundingLines": 8,
   // Appearance.
   "workbench.sideBar.location": "right",
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorTheme": "One Dark Pro Darker",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "fluent-icons",
   "editor.guides.bracketPairs": true,
@@ -101,5 +101,6 @@
   "oneDarkPro.italic": false,
   "oneDarkPro.vivid": true,
   "Lua.telemetry.enable": false,
-  "Lua.diagnostics.globals": ["vim"]
+  "Lua.diagnostics.globals": ["vim"],
+  "window.zoomLevel": 1
 }
