@@ -12,11 +12,12 @@
   "git.enableSmartCommit": true,
   "terminal.integrated.enablePersistentSessions": false,
   "editor.cursorSurroundingLines": 8,
-  // Appearance.
-  "workbench.sideBar.location": "right",
-  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.colorTheme": "One Dark Pro",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "fluent-icons",
+  "workbench.sideBar.location": "right",
+  "workbench.activityBar.visible": true,
+  "workbench.statusBar.visible": true,
   "editor.guides.bracketPairs": true,
   "editor.guides.bracketPairsHorizontal": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
@@ -30,6 +31,7 @@
   "debug.console.fontSize": 16,
   "terminal.integrated.fontSize": 16,
   "editor.wordWrap": "off",
+  "window.zoomLevel": 1,
   // Code styles.
   "editor.tabSize": 2,
   "files.insertFinalNewline": true,
@@ -102,5 +104,8 @@
   "oneDarkPro.vivid": true,
   "Lua.telemetry.enable": false,
   "Lua.diagnostics.globals": ["vim"],
-  "window.zoomLevel": 1
+  "vim.handleKeys": {
+    "<C-d>": false,
+    "<C-u>": false
+  }
 }
