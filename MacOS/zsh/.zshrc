@@ -108,14 +108,15 @@ fi
 # General aliases.
 alias cd="j"
 alias c="clear"
-alias e="exit"
+alias q="exit"
 alias n="neofetch"
 alias p="pipes.sh"
 alias v="nvim"
+alias cat="bat"
 
 # Navigation aliases.
-alias ls="exa"
-alias l="ls -al --color=auto -F --icons --group-directories-first -h"
+alias ls="exa --color=auto -F --icons --group-directories-first -h"
+alias l="ls -al"
 
 # Git aliases.
 alias g="git"
