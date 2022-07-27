@@ -102,10 +102,7 @@
   "oneDarkPro.italic": false,
   "oneDarkPro.vivid": true,
   "Lua.telemetry.enable": false,
-  "Lua.diagnostics.globals": [
-    "vim"
-  ],
-  "window.zoomLevel": 1
+  "Lua.diagnostics.globals": ["vim"]
   // "vim.handleKeys": {
   //   "<C-d>": false,
   //   "<C-u>": false
