@@ -31,7 +31,6 @@
   "debug.console.fontSize": 16,
   "terminal.integrated.fontSize": 16,
   "editor.wordWrap": "off",
-  "window.zoomLevel": 1,
   // Code styles.
   "editor.tabSize": 2,
   "files.insertFinalNewline": true,
@@ -103,9 +102,12 @@
   "oneDarkPro.italic": false,
   "oneDarkPro.vivid": true,
   "Lua.telemetry.enable": false,
-  "Lua.diagnostics.globals": ["vim"],
-  "vim.handleKeys": {
-    "<C-d>": false,
-    "<C-u>": false
-  }
+  "Lua.diagnostics.globals": [
+    "vim"
+  ],
+  "window.zoomLevel": 1
+  // "vim.handleKeys": {
+  //   "<C-d>": false,
+  //   "<C-u>": false
+  // }
 }
