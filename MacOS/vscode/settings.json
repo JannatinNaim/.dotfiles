@@ -14,8 +14,6 @@
   "editor.cursorSurroundingLines": 8,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "fluent-icons",
-  "workbench.activityBar.visible": true,
-  "workbench.statusBar.visible": true,
   "editor.guides.bracketPairs": true,
   "editor.guides.bracketPairsHorizontal": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
@@ -38,6 +36,7 @@
   "scss.completion.completePropertyWithSemicolon": false,
   "css.format.spaceAroundSelectorSeparator": true,
   "scss.format.spaceAroundSelectorSeparator": true,
+  "editor.autoClosingBrackets": "always",
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
