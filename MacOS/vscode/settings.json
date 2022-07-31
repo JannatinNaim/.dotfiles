@@ -12,10 +12,8 @@
   "git.enableSmartCommit": true,
   "terminal.integrated.enablePersistentSessions": false,
   "editor.cursorSurroundingLines": 8,
-  "workbench.colorTheme": "One Dark Pro",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "fluent-icons",
-  "workbench.sideBar.location": "right",
   "workbench.activityBar.visible": true,
   "workbench.statusBar.visible": true,
   "editor.guides.bracketPairs": true,
@@ -32,7 +30,7 @@
   "terminal.integrated.fontSize": 16,
   "editor.wordWrap": "off",
   // Code styles.
-  "editor.tabSize": 2,
+  "editor.tabSize": 4,
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
@@ -53,19 +51,24 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "[python]": {
     "editor.tabSize": 4
@@ -102,9 +105,28 @@
   "oneDarkPro.italic": false,
   "oneDarkPro.vivid": true,
   "Lua.telemetry.enable": false,
-  "Lua.diagnostics.globals": ["vim"]
-  // "vim.handleKeys": {
-  //   "<C-d>": false,
-  //   "<C-u>": false
-  // }
+  "Lua.diagnostics.globals": ["vim"],
+  "[lua]": {
+    "editor.defaultFormatter": "JohnnyMorganz.stylua"
+  },
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.sideBar.location": "right",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": []
+  },
+  "cSpell.enableFiletypes": [
+    "csv",
+    "diff",
+    "dotenv",
+    "gitignore",
+    "lua",
+    "pip-requirements",
+    "quokka-output",
+    "quokka-recent",
+    "quokka-timeline",
+    "sql",
+    "tailwindcss",
+    "toml",
+    "vimrc"
+  ]
 }
