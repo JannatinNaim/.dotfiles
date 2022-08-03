@@ -55,6 +55,7 @@ return packer.startup(function(use)
 	use("p00f/nvim-ts-rainbow")
 	use("lukas-reineke/indent-blankline.nvim")
 
+	use("neovim/nvim-lspconfig")
 	use("williamboman/nvim-lsp-installer")
 	use("hrsh7th/nvim-cmp")
 
