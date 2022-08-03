@@ -60,7 +60,7 @@ repos=(
   z-shell/F-Sy-H
   zsh-users/zsh-autosuggestions
   zsh-users/zsh-completions
-  sobolevn/wakatime-zsh-plugin
+  # sobolevn/wakatime-zsh-plugin
 )
 plugin-load $repos
 
@@ -131,6 +131,7 @@ alias gac="ga . && gc"
 alias gacp="ga . && gc && gp"
 alias gb="gh browse"
 alias ghpr="gh pr create --fill"
+alias ggraph="ghcal -u jannatinnaim"
 
 # VSCode alias.
 alias icode="code-insiders"
