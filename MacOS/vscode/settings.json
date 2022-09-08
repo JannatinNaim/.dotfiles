@@ -22,7 +22,6 @@
   "editor.fontFamily": "JetBrainsMono Nerd Font, monospace",
   "editor.fontLigatures": true,
   "editor.rulers": [80, 100, 120],
-  "editor.minimap.enabled": false,
   "editor.fontSize": 16,
   "debug.console.fontSize": 16,
   "terminal.integrated.fontSize": 16,
@@ -36,7 +35,6 @@
   "scss.completion.completePropertyWithSemicolon": false,
   "css.format.spaceAroundSelectorSeparator": true,
   "scss.format.spaceAroundSelectorSeparator": true,
-  "editor.autoClosingBrackets": "always",
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
@@ -105,7 +103,7 @@
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": true
   },
-  "oneDarkPro.editorTheme": "Shadow",
+  // "oneDarkPro.editorTheme": "Shadow",
   "oneDarkPro.markdownStyle": false,
   "oneDarkPro.bold": true,
   "oneDarkPro.italic": false,
@@ -115,7 +113,6 @@
   "[lua]": {
     "editor.defaultFormatter": "JohnnyMorganz.stylua"
   },
-  "workbench.colorTheme": "One Dark Pro Mix",
   "editor.tokenColorCustomizations": {
     "textMateRules": []
   },
@@ -136,6 +133,17 @@
   ],
   "svelte.enable-ts-plugin": true,
   "cSpell.userWords": ["Heyo"],
-  "workbench.sideBar.location": "right",
-  "window.zoomLevel": 1
+  "emmet.includeLanguages": {
+    "django-html": "html"
+  },
+  "terminal.external.osxExec": "iTerm.app",
+  "[dockercompose]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "githubPullRequests.pullBranch": "never",
+  "editor.minimap.enabled": false,
+  "workbench.activityBar.visible": false,
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "editor.stickyScroll.enabled": true
+  // "prettier.htmlWhitespaceSensitivity": "ignore"
 }

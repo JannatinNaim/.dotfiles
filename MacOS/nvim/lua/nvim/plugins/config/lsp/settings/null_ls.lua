@@ -35,17 +35,38 @@ null_ls.setup({
 		formatting.trim_newlines,
 		formatting.trim_whitespace,
 
+		-- diagnostics.cspell.with({
+		-- 	extra_args = { "-c", vim.fn.expand("~/.config/nvim/lua/plugins/settings/lsp/settings/cspell.json") },
+		-- 	disabled_filetypes = { "NvimTree" },
+		-- }),
+
 		formatting.prettier.with({
+			prefer_local = true,
+			-- extra_args = {
+			-- 	"--print-width",
+			-- 	120,
+			-- },
+		}),
+
+		-- formatting.eslint.with({
+		-- 	prefer_local = true,
+		-- }),
+		diagnostics.eslint.with({
+			prefer_local = true,
+		}),
+		code_actions.eslint.with({
 			prefer_local = true,
 		}),
 
-		diagnostics.pylint,
+		-- diagnostics.pylint,
+		diagnostics.flake8,
 		formatting.autopep8,
+		formatting.usort,
 
 		diagnostics.luacheck,
 		formatting.stylua,
 
-		code_actions.gitsigns,
-		code_actions.refactoring,
+		-- code_actions.gitsigns,
+		-- code_actions.refactoring,
 	},
 })

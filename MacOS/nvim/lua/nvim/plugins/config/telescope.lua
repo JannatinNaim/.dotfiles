@@ -83,7 +83,6 @@ telescope.setup({
 			fuzzy = true,
 			override_generic_sorter = true,
 			override_file_sorter = true,
-			case_mode = "smart_case",
 		},
 	},
 
@@ -93,18 +92,26 @@ telescope.setup({
 	},
 })
 
-local telescope_extensions = {
-	"gh",
-	"node_modules",
-	"repo",
-	"lsp_handlers",
-	"emoji",
-	"neoclip",
-	"cheatsheet",
-	"zoxide",
-	"luasnip",
-}
-
-for _, extension in pairs(telescope_extensions) do
-	telescope.load_extension(extension)
-end
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>ff",
+	"<cmd>Telescope find_files hidden=true<CR>",
+	{ noremap = true, silent = true }
+)
+vim.api.nvim_set_keymap("n", "<leader>fs", "<cmd>Telescope grep_string<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>flg", "<cmd>Telescope live_grep<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>fb", "<cmd>Telescope buffers<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>fgs", "<cmd>Telescope git_status<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>fgf", "<cmd>Telescope git_files<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>fk", "<cmd>Telescope keymaps<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>fi",
+	"<cmd>Telescope current_buffer_fuzzy_find<CR>",
+	{ noremap = true, silent = true }
+)
+vim.api.nvim_set_keymap("n", "<leader>fq", "<cmd>Telescope quickfix<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>fl", "<cmd>Telescope diagnostics<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>fd", "<cmd>Telescope lsp_definitions<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>fr", "<cmd>Telescope lsp_references<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>fy", "<cmd>Telescope lsp_document_symbols<CR>", { noremap = true, silent = true })

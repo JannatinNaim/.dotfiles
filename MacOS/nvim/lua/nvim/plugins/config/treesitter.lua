@@ -1,32 +1,43 @@
-local treesitter_config_status_ok, treesitter_config = pcall(require, "nvim-treesitter.configs")
-if not treesitter_config_status_ok then
+local status_ok, treesitter_config = pcall(require, "nvim-treesitter.configs")
+if not status_ok then
 	return
 end
 
 treesitter_config.setup({
 	ensure_installed = {
-		"html",
+		"bash",
 		"css",
-		"scss",
+		"html",
 		"javascript",
-		"typescript",
 		"json",
-		"python",
+		"json5",
+		"jsonc",
 		"lua",
+		"python",
+		"scss",
+		"typescript",
+		"vim",
+	},
+	autopairs = {
+		enable = true,
+	},
+	autotag = {
+		enable = true,
 	},
 	highlight = {
 		enable = true,
+		additional_vim_regex_highlighting = true,
 	},
 	indent = {
 		enable = true,
 	},
-	incremental_selection = {
+	context_commentstring = {
 		enable = true,
-		keymaps = {
-			init_selection = "gnn",
-			scope_incremental = "grc",
-			node_incremental = "grn",
-			node_decremental = "grm",
-		},
+		enable_autocmd = false,
+	},
+	rainbow = {
+		enable = true,
+		extended_mode = true,
+		max_file_lines = nil,
 	},
 })

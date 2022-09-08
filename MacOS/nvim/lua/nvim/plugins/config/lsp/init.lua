@@ -18,7 +18,6 @@ local servers = {
 	"tsserver",
 	"pyright",
 	"vimls",
-	"svelte",
 }
 
 lsp_installer.setup({

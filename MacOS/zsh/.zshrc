@@ -20,6 +20,9 @@ export EDITOR="nvim"
 # Initialize zoxide.
 eval "$(zoxide init zsh --cmd j --hook pwd)"
 
+# Initialize fzf.
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # Initialize command-not-found suggestion feature.
 HB_CNF_HANDLER="$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
 if [ -f "$HB_CNF_HANDLER" ]; then
@@ -41,6 +44,19 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+export PATH=$PATH:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin
+
+# export ANDROID_SDK_ROOT=/opt/homebrew/Caskroom/android-sdk/4333796
+# export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+# export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+# export PATH=$PATH:$ANDROID_SDK_ROOT/tools
+
+export TOOLCHAINS=swift
 
 # Bootstrap zsh_unplugged. (plugin manager)
 # ZPLUGINDIR=${ZPLUGINDIR:-${ZDOTDIR:-$HOME/.config/zsh}/plugins}
@@ -126,6 +142,8 @@ alias gc="g commit -v"
 alias gcl="g clone"
 alias gp="g push"
 alias gpl="g pull"
+alias gnb="g checkout -b"
+alias gsb="g switch"
 alias gl="g log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gac="ga . && gc"
 alias gacp="ga . && gc && gp"

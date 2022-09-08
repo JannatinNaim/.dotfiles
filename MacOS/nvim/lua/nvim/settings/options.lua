@@ -1,53 +1,53 @@
-local opt = vim.opt
+local options = vim.opt
 
--- Appearance
-opt.termguicolors = true
-opt.syntax = "on"
-opt.number = true
-opt.guicursor = ""
-opt.cursorline = true
-opt.cursorlineopt = "number,screenline"
-opt.colorcolumn = "80,120"
-opt.showmode = false
-opt.showtabline = 2
-opt.laststatus = 3
-opt.pumheight = 12
-opt.list = true
-opt.listchars = "tab:> ,trail:-,nbsp:+"
-opt.wrap = false
-opt.foldcolumn = "auto"
-opt.signcolumn = "yes"
-opt.guioptions = "egmrLTadi"
-opt.guifont = "JetBrains_Mono_Nerd_Font:h16,*"
+options.colorcolumn = "80,120"
+options.cursorline = true
+options.guicursor = ""
+options.guifont = "JetBrains_Mono_Nerd_Font:h17"
+options.laststatus = 3
+options.number = true
+options.relativenumber = false
+options.showmode = false
+options.showtabline = 2
+options.signcolumn = "yes"
+options.syntax = "on"
+options.termguicolors = true
+options.wrap = false
+options.fixendofline = true
 
--- Productivity Boost
-opt.mouse = "ar"
-opt.confirm = true
-opt.updatetime = 100
-opt.undofile = true
-opt.swapfile = false
-opt.writebackup = false
-opt.browsedir = "buffer"
-opt.shellslash = true
-opt.completeopt = { "menuone", "preview", "noinsert", "noselect" }
+options.completeopt = { "menu", "menuone", "noinsert", "noselect" }
 
--- Code Styles
-opt.shiftwidth = 4
-opt.tabstop = 4
-opt.softtabstop = 4
-opt.expandtab = true
-opt.formatoptions = "tqn2bjp"
-opt.smartcase = true
-opt.ignorecase = true
-opt.smartindent = true
-opt.iskeyword:append("-")
-opt.matchpairs:append("<:>")
-opt.shortmess:append("csI")
+options.gdefault = true
+options.iskeyword:append("-")
+options.shortmess:append("csI")
+options.whichwrap:append("b,h,l,<,>,[,]")
 
--- Ease Of Use
-opt.timeout = false
-opt.scrolloff = 8
-opt.sidescrolloff = 12
-opt.splitbelow = true
-opt.splitright = true
-opt.whichwrap:append("b,h,l,<,>,[,]")
+options.mouse = "a"
+
+options.pumheight = 12
+
+options.scrolloff = 10
+options.sidescrolloff = 10
+
+options.expandtab = true
+options.shiftwidth = 2
+options.softtabstop = 2
+options.tabstop = 2
+
+options.ignorecase = true
+options.smartcase = true
+options.smartindent = true
+
+options.splitbelow = true
+options.splitright = true
+
+options.swapfile = false
+options.undofile = true
+options.writebackup = false
+
+options.updatetime = 100
+options.timeout = false
+options.browsedir = "buffer"
+vim.g.netrw_banner = 0
+
+vim.cmd("highlight ColorColumn guibg=gray50")

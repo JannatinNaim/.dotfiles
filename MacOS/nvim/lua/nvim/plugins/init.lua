@@ -1,2 +1,2 @@
-require("nvim.plugins.setup")
+require("nvim.plugins.plugins")
 require("nvim.plugins.config")

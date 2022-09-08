@@ -10,9 +10,9 @@ end
 local diagnostics = {
 	"diagnostics",
 	sources = { "nvim_diagnostic" },
-	sections = { "error", "warn", "info", "hint" },
-	symbols = { error = " ", warn = " ", info = " ", hint = " " },
-	colored = true,
+	sections = { "error", "warn" },
+	symbols = { error = " ", warn = " " },
+	colored = false,
 	update_in_insert = true,
 	always_visible = true,
 }
@@ -24,29 +24,16 @@ local diff = {
 	cond = hide_in_width,
 }
 
-local filename = {
-	"filename",
-	file_status = true,
-	path = 0,
-	shorting_target = 40,
-	symbols = {
-		modified = "[+]",
-		readonly = "[-]",
-		unnamed = "[NO NAME]",
-	},
-}
-
 local mode = {
 	"mode",
 	fmt = function(str)
-		return "[" .. str .. "]"
+		return str
 	end,
 }
 
 local filetype = {
 	"filetype",
 	icons_enabled = true,
-	colored = true,
 	icon = nil,
 }
 
@@ -76,40 +63,38 @@ local progress = function()
 		"▁▁",
 		"__",
 	}
-
 	local line_ratio = current_line / total_lines
 	local index = math.ceil(line_ratio * #chars)
-
 	return chars[index]
 end
 
 local spaces = function()
-	local width = vim.api.nvim_buf_get_option(0, "shiftwidth")
-	local expandtab = vim.api.nvim_buf_get_option(0, "expandtab")
-
-	if expandtab then
-		return "spaces: " .. width
-	else
-		return "tabs: " .. width
-	end
+	return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
 end
-
-local onedark = require("lualine.themes.onedark")
 
 lualine.setup({
 	globalstatus = true,
 	options = {
 		icons_enabled = true,
-		theme = onedark,
+		theme = "onedark",
+		-- section_separators = { left = "", right = "" },
+		-- component_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" },
-		component_separators = { left = "|", right = "|" },
+		component_separators = { left = "", right = "" },
+		disabled_filetypes = { "alpha", "dashboard", "NvimTree", "Outline" },
 		always_divide_middle = true,
 	},
 	sections = {
 		lualine_a = { mode },
 		lualine_b = { branch, diagnostics },
-		lualine_c = { filename },
-		lualine_x = { diff, "encoding", spaces, filetype },
+		lualine_c = {
+			{
+				"filename",
+				file_status = true,
+				path = 1,
+			},
+		},
+		lualine_x = { diff, spaces, "encoding", filetype },
 		lualine_y = { progress },
 		lualine_z = { location },
 	},
@@ -121,8 +106,6 @@ lualine.setup({
 		lualine_y = {},
 		lualine_z = {},
 	},
-	extensions = {
-		"nvim-tree",
-		"quickfix",
-	},
+	tabline = {},
+	extensions = {},
 })

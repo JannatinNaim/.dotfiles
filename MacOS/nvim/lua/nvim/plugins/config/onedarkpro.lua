@@ -4,6 +4,10 @@ if not onedarkpro_status_ok then
 end
 
 onedarkpro.setup({
+	dark_theme = "onedark_vivid",
+	plugins = {
+		all = true,
+	},
 	styles = {
 		keywords = "bold",
 		functions = "bold",
@@ -12,9 +16,11 @@ onedarkpro.setup({
 	options = {
 		bold = true,
 		italic = false,
+		underline = false,
 		undercurl = true,
 		cursorline = true,
 		transparency = true,
+		terminal_colors = true,
 	},
 	colors = {
 		fg = "#a0a8b7",

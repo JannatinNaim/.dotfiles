@@ -10,23 +10,13 @@
   {
     "key": "cmd+k cmd+r",
     "command": "workbench.action.reloadWindow"
+  },
+  {
+    "key": "cmd+k shift+cmd+v",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "cmd+k shift+cmd+m",
+    "command": "editor.action.toggleMinimap"
   }
-  // {
-  //   "key": "ctrl+d",
-  //   "command": "cursorMove",
-  //   "args": {
-  //     "to": "down",
-  //     "by": "line",
-  //     "value": 20
-  //   }
-  // },
-  // {
-  //   "key": "ctrl+u",
-  //   "command": "cursorMove",
-  //   "args": {
-  //     "to": "up",
-  //     "by": "line",
-  //     "value": 20
-  //   }
-  // }
 ]
